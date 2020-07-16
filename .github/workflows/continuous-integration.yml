@@ -23,9 +23,16 @@ jobs:
 
           pip install flake8
           pip install pytest
+          pip install pytest-cov
       - name: Lint with flake8
         run: |
           # all Python files should follow PEP8 (except some notebooks, see setup.cfg)
           python -m flake8 promptpay tests
       - name: Test with pytest
-        run: python -m pytest tests
+        run: python -m pytest tests --cov=./ --cov-report=xml
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage.xml
+          flags: unittests
