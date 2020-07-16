@@ -1,4 +1,4 @@
-name: CD (pip)
+name: Continuous Deployment (pip)
 on:
   release:
     types: [created]
