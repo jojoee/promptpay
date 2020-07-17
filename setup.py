@@ -3,7 +3,8 @@ from setuptools import setup, find_packages
 
 requirements = [
     'qrcode',
-    'crc16'
+    'crc16',
+    "Pillow"
 ]
 
 # The directory containing this file
