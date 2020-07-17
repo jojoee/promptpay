@@ -1,6 +1,11 @@
 import pathlib
 from setuptools import setup
 
+requirements = [
+    'qrcode',
+    'crc16'
+]
+
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
 
@@ -25,6 +30,6 @@ setup(
     ],
     packages=["promptpay"],
     include_package_data=False,
-    install_requires=[],
     entry_points={"console_scripts": ["promptpay=promptpay.__main__:main"]},
+    install_requires=requirements,
 )
