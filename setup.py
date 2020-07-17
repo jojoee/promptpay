@@ -16,7 +16,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="promptpay",
-    version="1.1.0",
+    version="1.1.1",
     description="Python library to generate PromptPay QR Code",
     long_description=README,
     long_description_content_type="text/markdown",
