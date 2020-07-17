@@ -1,5 +1,6 @@
 import re
 import crc16
+import qrcode
 
 ID_PAYLOAD_FORMAT = '00'
 ID_POI_METHOD = '01'
@@ -89,3 +90,15 @@ def generate_payload(id="", amount=0):
     data.append(format(ID_CRC, checksum(data2crc)))
 
     return ''.join(data)
+
+
+def to_image(payload=""):
+    img = qrcode.make(payload)
+    return img
+
+
+def to_file(payload="", filepath=""):
+    imgfile = open(filepath, 'wb')
+    img = to_image(payload)
+    img.save(imgfile, 'PNG')
+    imgfile.close()
