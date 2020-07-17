@@ -1,7 +1,6 @@
 # PromptPay
 
 ![flake8 + pytest](https://github.com/jojoee/promptpay/workflows/flake8%20+%20pytest/badge.svg?branch=master)
-![Deploy to PyPI](https://github.com/jojoee/promptpay/workflows/Deploy%20to%20PyPI/badge.svg?branch=master)
 [![PyPI version fury.io](https://badge.fury.io/py/promptpay.svg)](https://pypi.python.org/pypi/promptpay/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![codecov](https://codecov.io/gh/jojoee/promptpay/branch/master/graph/badge.svg)](https://codecov.io/gh/jojoee/promptpay)
