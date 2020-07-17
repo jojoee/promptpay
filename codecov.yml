@@ -1,0 +1,4 @@
+ignore:
+  - "promptpay/__init__.py"
+  - "promptpay/__main__.py"
+  - "setup.py"
