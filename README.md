@@ -38,5 +38,13 @@ qrcode.to_file(payload, "./qrcode-0841234567.png")
 qrcode.to_file(payload_with_amount, "/Users/joe/Downloads/qrcode-0841234567.png") 
 ```
 
+### CLI
+
+```bash
+python -m promptpay qrcode --id="0841234567"
+python -m promptpay qrcode --id="0841234567" --file="./qrcode-cli.png"
+python -m promptpay qrcode --id="0841234567" --amount=2.34 --file="/Users/joe/Downloads/qrcode-cli-with-amount.png"
+```
+
 ## Reference
 - [มีอะไรอยู่ใน PromptPay QR แกะสเปค QR ที่จะใช้จ่ายผ่าน mobile banking ได้ทุกธนาคารในอนาคต](https://www.blognone.com/node/95133)
