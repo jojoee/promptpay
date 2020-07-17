@@ -1,5 +1,5 @@
 import pathlib
-from setuptools import setup
+from setuptools import setup, find_packages
 
 requirements = [
     'qrcode',
@@ -16,7 +16,7 @@ README = (HERE / "README.md").read_text()
 setup(
     name="promptpay",
     version="0.0.1",
-    description="",
+    description="Python library to generate PromptPay QR Code",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/jojoee/promptpay",
@@ -25,11 +25,17 @@ setup(
     license="MIT",
     classifiers=[
         "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=["promptpay"],
+    packages=find_packages(),
     include_package_data=False,
-    entry_points={"console_scripts": ["promptpay=promptpay.__main__:main"]},
     install_requires=requirements,
+    keywords=["promptpay", "qrcode"],
+    entry_points={
+        "console_scripts": [
+            "promptpay=promptpay.__main__:main"
+        ]
+    },
 )
