@@ -1,4 +1,4 @@
-name: Continuous Integration (pip)
+name: flake8 + pytest
 on: [push]
 
 jobs:
