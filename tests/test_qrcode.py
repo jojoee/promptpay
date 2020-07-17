@@ -1,4 +1,5 @@
 from promptpay import qrcode
+import os.path
 
 
 class TestSanitizeTarget:
@@ -130,3 +131,18 @@ class TestGeneratePayload:
         assert qrcode.generate_payload(
             id='004000006579718',
             amount=200.50) == "00020101021229390016A00000067701011103150040000065797185802TH53037645406200.5063048A37"
+
+
+class TestToImage:
+    def test_normal(self):
+        payload = qrcode.generate_payload("0841234567")
+        img = qrcode.to_image(payload)
+        assert type(img).__name__ == "PilImage"
+
+
+class TestToFile:
+    def test_normal(self):
+        payload = qrcode.generate_payload("0841234567")
+        filepath = "./exported-qrcode-file.png"
+        qrcode.to_file(payload, filepath)
+        assert os.path.exists(filepath)
