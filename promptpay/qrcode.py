@@ -2,7 +2,6 @@ import re
 import crc16
 import qrcode
 from PIL import Image
-from typing import Any
 
 ID_PAYLOAD_FORMAT = "00"
 ID_POI_METHOD = "01"
