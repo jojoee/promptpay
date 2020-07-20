@@ -42,7 +42,10 @@ qrcode.to_file(payload_with_amount, "/Users/joe/Downloads/qrcode-0841234567.png"
 ```bash
 python -m promptpay qrcode --id="0841234567"
 python -m promptpay qrcode --id="0841234567" --file="./qrcode-cli.png"
-python -m promptpay qrcode --id="0841234567" --amount=2.34 --file="/Users/joe/Downloads/qrcode-cli-with-amount.png"
+python -m promptpay qrcode \
+  --id="0841234567" \
+  --amount=2.34 \
+  --file="/Users/joe/Downloads/qrcode-cli-with-amount.png"
 ```
 
 ## Reference
