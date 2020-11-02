@@ -21,7 +21,7 @@ def main():
         id_or_phone_number = None
         filepath = None
         amount = 0
-        is_show = False
+        is_show = True
 
         # parsing
         for arg in args:
@@ -43,8 +43,7 @@ def main():
             if filepath:
                 qrcode.to_file(payload, filepath)
             if is_show:
-                img = qrcode.to_image(payload)
-                img.show()
+                qrcode.print_tty()
 
     else:
         print(USAGE)
