@@ -51,4 +51,3 @@ python -m promptpay qrcode \
 
 ## Reference
 - [มีอะไรอยู่ใน PromptPay QR แกะสเปค QR ที่จะใช้จ่ายผ่าน mobile banking ได้ทุกธนาคารในอนาคต](https://www.blognone.com/node/95133)
-- [ธนาคารแห่งประเทศไทย: แนวนโยบายการใช้มาตรฐาน Thai QR Code ในธุรกรรมการชำระเงิน](https://www.bot.or.th/Thai/FIPCS/Documents/FPG/2562/ThaiPDF/25620084.pdf)
