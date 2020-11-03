@@ -43,7 +43,7 @@ def main():
             if filepath:
                 qrcode.to_file(payload, filepath)
             if is_show:
-                qrcode.print_tty()
+                qrcode.print_tty(payload)
 
     else:
         print(USAGE)

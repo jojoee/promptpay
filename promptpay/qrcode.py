@@ -175,5 +175,6 @@ def print_tty(payload: str= "") -> None:
     :return:
     """
     qr = qrcode.QRCode()
-    qr.make(payload)
+    qr.add_data(payload)
+    qr.make()
     qr.print_tty()
