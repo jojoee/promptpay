@@ -21,7 +21,7 @@ def main():
         id_or_phone_number = None
         filepath = None
         amount = 0
-        is_show = True
+        is_show = False
 
         # parsing
         for arg in args:
