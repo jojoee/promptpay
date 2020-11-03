@@ -166,3 +166,15 @@ def to_file(payload: str = "", filepath: str = "") -> None:
     img = to_image(payload)
     img.save(imgfile, "PNG")
     imgfile.close()
+
+def print_tty(payload: str= "") -> None:
+    """
+    Output the QR Code only using TTY colors.  
+
+    :param payload: PromptPay Payload
+    :return:
+    """
+    qr = qrcode.QRCode()
+    qr.add_data(payload)
+    qr.make()
+    qr.print_tty()
