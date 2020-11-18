@@ -43,7 +43,11 @@ def main():
             if filepath:
                 qrcode.to_file(payload, filepath)
             if is_show:
-                qrcode.print_tty(payload)
+                if sys.stdout.isatty():
+                    qrcode.print_tty(payload)
+                else:
+                    img = qrcode.to_image(payload)
+                    img.show()
 
     else:
         print(USAGE)
