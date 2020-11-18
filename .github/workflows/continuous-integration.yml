@@ -41,5 +41,6 @@ jobs:
           # able to run cli
           pip install .
           python -m promptpay qrcode --id="0841234567"
+          python -m promptpay qrcode --id="0841234567" --show=true
           python -m promptpay qrcode --id="0841234567" --file="./qrcode-cli.png"
           python -m promptpay qrcode --id="0841234567" --amount=2.34 --file="/tmp/qrcode-cli-with-amount.png"
