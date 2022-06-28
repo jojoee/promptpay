@@ -1,7 +1,7 @@
 import pathlib
 from setuptools import setup, find_packages
 
-requirements = ["qrcode", "crc16", "Pillow"]
+requirements = ["qrcode", "libscrc", "Pillow"]
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
