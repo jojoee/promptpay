@@ -69,6 +69,10 @@ pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n
 python -m pip list --format=freeze > requirements-tmp.txt
 pip install libscrc==
 pip install Pillow==
+pip install promptpay
+pip install promptpay==1.1.7
+pip install .
+pip install --force-reinstall promptpay
 ```
 
 ## Reference
