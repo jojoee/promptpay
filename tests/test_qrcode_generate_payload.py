@@ -125,7 +125,7 @@ class TestGeneratePayload:
         assert qrcode.generate_payload(
             id="0-0236-37209-81-1") == "00020101021129370016A000000677010111021300236372098115802TH530376463040C4C"
 
-    def test_ewallet_id(self):
+    def test_ewallet_format(self):
         # eWallet ID, KPlus ID
         assert qrcode.generate_payload(
             id="012345678901234") == "00020101021129390016A00000067701011103150123456789012345802TH530376463049781"
@@ -136,7 +136,7 @@ class TestGeneratePayload:
         assert qrcode.generate_payload(
             id="004000006579718") == "00020101021129390016A00000067701011103150040000065797185802TH53037646304FBB5"
 
-    def test_ewallet_id_with_amount(self):
+    def test_ewallet_format_with_amount(self):
         # no decimal points
         assert qrcode.generate_payload(
             id="012345678901234",
