@@ -1,5 +1,5 @@
 import re
-import crc16
+import libscrc
 import qrcode
 from PIL import Image
 
@@ -79,7 +79,7 @@ def checksum(target: str = "") -> str:
     :return:
     """
     byte_str = target.encode("ascii")  # convert to bytes
-    hex_str = hex(crc16.crc16xmodem(byte_str, 0xFFFF))
+    hex_str = hex(libscrc.xmodem(byte_str, 0xFFFF))
     code = hex_str.replace("0x", "").upper()
     result = ("0000" + code)[-4:]  # only last 4 digits
 
