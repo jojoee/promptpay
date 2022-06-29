@@ -56,6 +56,8 @@ python -m promptpay qrcode \
 # Conda env
 conda create --name promptpay python=3.10.4
 conda activate promptpay
+conda create --name promptpay37 python=3.7.13
+conda activate promptpay37
 
 # others
 pip install -r requirements.txt
