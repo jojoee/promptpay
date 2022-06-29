@@ -49,5 +49,17 @@ python -m promptpay qrcode \
   --file="/Users/joe/Downloads/qrcode-cli-with-amount.png"
 ```
 
+## Development
+
+```bash
+# Conda env
+conda create --name promptpay python=3.10.4
+conda activate promptpay
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
+python -m flake8 --ignore=E501 promptpay tests
+python -m pytest tests --cov=./ --cov-report=xml
+```
+
 ## Reference
 - [มีอะไรอยู่ใน PromptPay QR แกะสเปค QR ที่จะใช้จ่ายผ่าน mobile banking ได้ทุกธนาคารในอนาคต](https://www.blognone.com/node/95133)
