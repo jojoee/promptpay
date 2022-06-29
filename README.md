@@ -54,10 +54,11 @@ python -m promptpay qrcode \
 
 ```bash
 # Conda env
-conda create --name promptpay python=3.10.4
-conda activate promptpay
-conda create --name promptpay37 python=3.7.13
-conda activate promptpay37
+conda create --name promptpay3.10 python=3.10.4
+conda activate promptpay3.10
+conda create --name promptpay3.7 python=3.7.13
+conda activate promptpay3.7
+conda remove --name promptpay3.10 --all
 
 # others
 pip install -r requirements.txt
@@ -66,6 +67,8 @@ python -m flake8 --ignore=E501 promptpay tests
 python -m pytest tests --cov=./ --cov-report=xml
 pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
 python -m pip list --format=freeze > requirements-tmp.txt
+pip install libscrc==
+pip install Pillow==
 ```
 
 ## Reference
