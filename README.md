@@ -8,6 +8,7 @@
 Python library to generate PromptPay QR Code, inspired from [dtinth/promptpay-qr](https://github.com/dtinth/promptpay-qr)
 
 ## Installation
+
 ```
 pip install promptpay
 
@@ -62,4 +63,5 @@ python -m pytest tests --cov=./ --cov-report=xml
 ```
 
 ## Reference
+
 - [มีอะไรอยู่ใน PromptPay QR แกะสเปค QR ที่จะใช้จ่ายผ่าน mobile banking ได้ทุกธนาคารในอนาคต](https://www.blognone.com/node/95133)
