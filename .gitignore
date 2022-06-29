@@ -43,3 +43,4 @@ ENV/
 
 # project related
 requirements-tmp.txt
+exported-qrcode-file.png
