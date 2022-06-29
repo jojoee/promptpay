@@ -40,3 +40,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# project related
+requirements-tmp.txt

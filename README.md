@@ -56,10 +56,14 @@ python -m promptpay qrcode \
 # Conda env
 conda create --name promptpay python=3.10.4
 conda activate promptpay
+
+# others
 pip install -r requirements.txt
 pip install -r requirements-dev.txt
 python -m flake8 --ignore=E501 promptpay tests
 python -m pytest tests --cov=./ --cov-report=xml
+pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
+python -m pip list --format=freeze > requirements-tmp.txt
 ```
 
 ## Reference
