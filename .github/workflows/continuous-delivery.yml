@@ -1,4 +1,4 @@
-name: Deploy to PyPI
+name: continuous-delivery
 on:
   release:
     types: [created]
