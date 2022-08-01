@@ -1,3 +1,3 @@
-libscrc==1.7.1
-Pillow==7.2.0
-qrcode==6.1
+libscrc
+Pillow
+qrcode
