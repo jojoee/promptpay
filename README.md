@@ -59,11 +59,15 @@ python -m promptpay qrcode \
 # Conda env
 conda create --name promptpay3.10 python=3.10.4
 conda activate promptpay3.10
+conda create --name promptpay3.9 python=3.9.12
+conda activate promptpay3.9
 conda create --name promptpay3.7 python=3.7.13
 conda activate promptpay3.7
 conda remove --name promptpay3.10 --all
+conda search python
 
 # others
+python -V
 pip install -r requirements.txt
 pip install -r requirements-dev.txt
 python -m flake8 --ignore=E501 promptpay tests
